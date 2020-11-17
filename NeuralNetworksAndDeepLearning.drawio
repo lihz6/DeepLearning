@@ -1,6 +1,6 @@
-<mxfile host="65bd71144e" modified="2020-11-10T13:28:40.024Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.0 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="0Hlzrfs3DLsHBcQ1PZdV" version="13.6.5">
+<mxfile host="65bd71144e" modified="2020-11-17T11:49:31.010Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="6Fzg_0bS55QUNXBRBwO4" version="13.6.5">
     <diagram id="q3rTDrUxxIKwIlSCFle0" name="Page-1">
-        <mxGraphModel dx="390" dy="172" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1240" pageHeight="640" math="1" shadow="0">
+        <mxGraphModel dx="1210" dy="736" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1240" pageHeight="640" math="1" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -97,10 +97,10 @@
                 <mxCell id="Nvtg1TPkIXD0ABIxdMMO-22" value="" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="360" y="280" width="40" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="Nvtg1TPkIXD0ABIxdMMO-32" value="\(\textbf{x}\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;" parent="1" vertex="1">
-                    <mxGeometry x="120" y="490" width="40" height="20" as="geometry"/>
+                <mxCell id="Nvtg1TPkIXD0ABIxdMMO-32" value="\(\textbf{x}\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="560" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="Nvtg1TPkIXD0ABIxdMMO-33" value="\(\textbf{z}^2=\textbf{W}^2\textbf{x}+\textbf{b}^2\)&lt;br&gt;\(\textbf{a}^2=\sigma(\textbf{z}^2)\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;" parent="1" vertex="1">
+                <mxCell id="Nvtg1TPkIXD0ABIxdMMO-33" value="\(\textbf{z}^2=\textbf{W}^2\textbf{x}+\textbf{b}^2\)&lt;br style=&quot;font-size: 24px;&quot;&gt;\(\textbf{a}^2=\sigma(\textbf{z}^2)\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="240" y="490" width="40" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="DQgk7e7TCQ9Oa8yxwp68-18" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" parent="1" source="DQgk7e7TCQ9Oa8yxwp68-1" target="DQgk7e7TCQ9Oa8yxwp68-5" edge="1">
@@ -262,19 +262,19 @@
                 <mxCell id="DQgk7e7TCQ9Oa8yxwp68-56" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=1;fontFamily=Courier New;" parent="1" vertex="1">
                     <mxGeometry x="1080" y="240" width="40" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="DQgk7e7TCQ9Oa8yxwp68-63" value="\(C\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;" parent="1" vertex="1">
-                    <mxGeometry x="1080" y="490" width="40" height="20" as="geometry"/>
+                <mxCell id="DQgk7e7TCQ9Oa8yxwp68-63" value="\(C\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
+                    <mxGeometry x="1080" y="580" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" value="\(\textbf{z}^3=\textbf{W}^3\textbf{a}^2+\textbf{b}^3\)&lt;br&gt;\(\textbf{a}^3=\sigma(\textbf{z}^3)\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;" parent="1" vertex="1">
-                    <mxGeometry x="360" y="490" width="40" height="20" as="geometry"/>
+                <mxCell id="2" value="\(\textbf{z}^3=\textbf{W}^3\textbf{a}^2+\textbf{b}^3\)&lt;br style=&quot;font-size: 24px;&quot;&gt;\(\textbf{a}^3=\sigma(\textbf{z}^3)\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="580" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="\(\textbf{z}^{l-1}=\textbf{W}^{l-1}\textbf{a}^{l-2}+\textbf{b}^{l-1}\)&lt;br&gt;\(\textbf{a}^{l-1}=\sigma(\textbf{z}^{l-1})\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;" parent="1" vertex="1">
+                <mxCell id="3" value="\(\textbf{z}^{l-1}=\textbf{W}^{l-1}\textbf{a}^{l-2}+\textbf{b}^{l-1}\)&lt;br style=&quot;font-size: 24px;&quot;&gt;\(\textbf{a}^{l-1}=\sigma(\textbf{z}^{l-1})\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="600" y="490" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="\(\textbf{z}^l=\textbf{W}^l\textbf{a}^{l-1}+\textbf{b}^l\)&lt;br&gt;\(\textbf{a}^l=\sigma(\textbf{z}^l)\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;" parent="1" vertex="1">
-                    <mxGeometry x="720" y="490" width="40" height="20" as="geometry"/>
+                <mxCell id="4" value="\(\textbf{z}^l=\textbf{W}^l\textbf{a}^{l-1}+\textbf{b}^l\)&lt;br style=&quot;font-size: 24px;&quot;&gt;\(\textbf{a}^l=\sigma(\textbf{z}^l)\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="580" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="\(\textbf{z}^L=\textbf{W}^L\textbf{a}^{L-1}+\textbf{b}^L\)&lt;br&gt;\(\textbf{a}^L=\sigma(\textbf{z}^L)\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;" parent="1" vertex="1">
+                <mxCell id="5" value="\(\textbf{z}^L=\textbf{W}^L\textbf{a}^{L-1}+\textbf{b}^L\)&lt;br style=&quot;font-size: 24px;&quot;&gt;\(\textbf{a}^L=\sigma(\textbf{z}^L)\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="960" y="490" width="40" height="20" as="geometry"/>
                 </mxCell>
             </root>
