@@ -97,10 +97,10 @@
                 <mxCell id="Nvtg1TPkIXD0ABIxdMMO-22" value="" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="360" y="280" width="40" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="Nvtg1TPkIXD0ABIxdMMO-32" value="\(\textbf{x}\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
+                <mxCell id="Nvtg1TPkIXD0ABIxdMMO-32" value="\(\mathbf{x}\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="120" y="560" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="Nvtg1TPkIXD0ABIxdMMO-33" value="\(\textbf{z}^2=\textbf{W}^2\textbf{x}+\textbf{b}^2\)&lt;br style=&quot;font-size: 24px;&quot;&gt;\(\textbf{a}^2=\sigma(\textbf{z}^2)\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
+                <mxCell id="Nvtg1TPkIXD0ABIxdMMO-33" value="\(\mathbf{z}^2=\mathbf{W}^2\mathbf{x}+\mathbf{b}^2\)&lt;br style=&quot;font-size: 24px;&quot;&gt;\(\mathbf{a}^2=\sigma(\mathbf{z}^2)\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="240" y="490" width="40" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="DQgk7e7TCQ9Oa8yxwp68-18" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" parent="1" source="DQgk7e7TCQ9Oa8yxwp68-1" target="DQgk7e7TCQ9Oa8yxwp68-5" edge="1">
@@ -265,16 +265,16 @@
                 <mxCell id="DQgk7e7TCQ9Oa8yxwp68-63" value="\(C\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="1080" y="580" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" value="\(\textbf{z}^3=\textbf{W}^3\textbf{a}^2+\textbf{b}^3\)&lt;br style=&quot;font-size: 24px;&quot;&gt;\(\textbf{a}^3=\sigma(\textbf{z}^3)\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
+                <mxCell id="2" value="\(\mathbf{z}^3=\mathbf{W}^3\mathbf{a}^2+\mathbf{b}^3\)&lt;br style=&quot;font-size: 24px;&quot;&gt;\(\mathbf{a}^3=\sigma(\mathbf{z}^3)\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="360" y="580" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="\(\textbf{z}^{l-1}=\textbf{W}^{l-1}\textbf{a}^{l-2}+\textbf{b}^{l-1}\)&lt;br style=&quot;font-size: 24px;&quot;&gt;\(\textbf{a}^{l-1}=\sigma(\textbf{z}^{l-1})\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
+                <mxCell id="3" value="\(\mathbf{z}^{l-1}=\mathbf{W}^{l-1}\mathbf{a}^{l-2}+\mathbf{b}^{l-1}\)&lt;br style=&quot;font-size: 24px;&quot;&gt;\(\mathbf{a}^{l-1}=\sigma(\mathbf{z}^{l-1})\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="600" y="490" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="\(\textbf{z}^l=\textbf{W}^l\textbf{a}^{l-1}+\textbf{b}^l\)&lt;br style=&quot;font-size: 24px;&quot;&gt;\(\textbf{a}^l=\sigma(\textbf{z}^l)\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
+                <mxCell id="4" value="\(\mathbf{z}^l=\mathbf{W}^l\mathbf{a}^{l-1}+\mathbf{b}^l\)&lt;br style=&quot;font-size: 24px;&quot;&gt;\(\mathbf{a}^l=\sigma(\mathbf{z}^l)\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="710" y="580" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="\(\textbf{z}^L=\textbf{W}^L\textbf{a}^{L-1}+\textbf{b}^L\)&lt;br style=&quot;font-size: 24px;&quot;&gt;\(\textbf{a}^L=\sigma(\textbf{z}^L)\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
+                <mxCell id="5" value="\(\mathbf{z}^L=\mathbf{W}^L\mathbf{a}^{L-1}+\mathbf{b}^L\)&lt;br style=&quot;font-size: 24px;&quot;&gt;\(\mathbf{a}^L=\sigma(\mathbf{z}^L)\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="960" y="490" width="40" height="20" as="geometry"/>
                 </mxCell>
             </root>
