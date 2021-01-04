@@ -69,3 +69,13 @@ $$
 &\mathbf b^l &\gets&& \mathbf b^l - \eta\frac{\partial C}{\partial\mathbf b^l}&
 \end{alignedat}
 $$
+
+### Sigmoid + MSE 有什么不好？
+
+犯错并不可怕，可怕的是不长教训一错再错。理想情况下，错误越大教训越大，也就是损失越大学习越快，**而 Sigmoid + MSE 却是损失越大学习越慢**，所以它们不是一组好的搭配。
+
+> 如果 Output function 为 $a_i^L = \frac{1}{1 + e^{-z_i^L}}$, Loss function 为 $C = \frac{(a_i^L - y_i^L)^2}{2}$, 则：
+>
+> $$\delta_i^L = \frac{\partial C}{\partial z_i^L} = \frac{\partial C}{\partial a_i^L}\frac{\partial a_i^L}{\partial z_i^L} = (a_i^L - y_i^L)a_i^L(1 - a_i^L)$$
+>
+> 由此可知，$a_i^L \to 0$ 或 $a_i^L \to 1$ 时，$\delta_i^L \to 0$, 也就是损失越大学习越慢。
