@@ -1,7 +1,5 @@
 # 神经网络与深度学习
 
-### 用 20% 的时间学到 80% 的东西
-
 1. 何谓模型？何谓参数？何谓超参数？
 2. 为什么要损失函数？能不能直接用正确率？
 3. 如何选择损失函数使得学习更快？
@@ -9,17 +7,17 @@
 5. 正向传播：神经网络模型是怎样进行推理计算的？
 6. 反向传播：什么是梯度下降法？在训练过程中是怎样学习的？
 
-![NeuralNetworksAndDeepLearning](./NeuralNetworksAndDeepLearning.png)
+![NeuralNetworksAndDeepLearning](./NeuralNetworks.png)
 
 ### 如何减小损失(_loss_)? 什么是学习率(_learning rate_)?
 
 根据全微分定义，当 $W^l_{jk} \to 0$, $b^l_j \to 0$ 时：
 
-$$\Delta C \to \sum_l\sum_j\left(\sum_k\Delta W^l_{jk}\frac{\partial C}{\partial W^l_{jk}} + \Delta b^l_j\frac{\partial C}{\partial b^l_j}\right)$$
+$$\Delta C \to \sum_l\sum_j\left(\sum_k\frac{\partial C}{\partial W^l_{jk}}\Delta W^l_{jk} + \frac{\partial C}{\partial b^l_j}\Delta b^l_j\right)$$
 
 若取 $\Delta W^l_{jk} = -\eta\frac{\partial C}{\partial W^l_{jk}}$, $\Delta b^l_j = -\eta\frac{\partial C}{\partial b^l_j}$, 则有：
 
-$$\begin{aligned} \Delta C &\approx \sum_l\sum_j\left(\sum_k\Delta W^l_{jk}\frac{\partial C}{\partial W^l_{jk}} + \Delta b^l_j\frac{\partial C}{\partial b^l_j}\right)\\ &= -\eta\sum_l\sum_j\left(\sum_k\left(\frac{\partial C}{\partial W^l_{jk}}\right)^2 + \left(\frac{\partial C}{\partial b^l_j}\right)^2\right)\\ &\leqslant 0 \end{aligned}$$
+$$\begin{aligned} \Delta C &\approx \sum_l\sum_j\left(\sum_k\frac{\partial C}{\partial W^l_{jk}}\Delta W^l_{jk} + \frac{\partial C}{\partial b^l_j}\Delta b^l_j\right)\\ &= -\eta\sum_l\sum_j\left(\sum_k\left(\frac{\partial C}{\partial W^l_{jk}}\right)^2 + \left(\frac{\partial C}{\partial b^l_j}\right)^2\right)\\ &\leqslant 0 \end{aligned}$$
 
 **由此可实现 loss 的递减。** 其中 $\eta$ 是一个很小的正数常量，是一个*超参数*，称为学习率(learning rate).
 
@@ -51,18 +49,18 @@ $$\boldsymbol \delta^L = (\nabla \mathbf a^L)^T\frac{\partial C}{\partial \mathb
 
 而 $\boldsymbol \delta^{l-1}$ 与 $\boldsymbol \delta^l$ 的关系也不难发现：
 
-$$\delta^{l-1}_k = \frac{\partial C}{\partial z^{l-1}_k} = \sum_j\frac{\partial C}{\partial z^l_j}\frac{\partial z^l_j}{\partial a^{l-1}_k} = \sum_j\delta^l_j\frac{\partial\left(\sum\limits_kW^l_{jk}a^{l-1}_k + b^l_j\right)}{\partial a^{l-1}_k} = \sum_j\delta^l_jW^j_{jk} = \sum_jW^j_{jk}\delta^l_j$$
+$$\delta^{l-1}_k = \frac{\partial C}{\partial z^{l-1}_k} = \sum_j\frac{\partial C}{\partial z^l_j}\frac{\partial z^l_j}{\partial a^{l-1}_k}\frac{\partial a^{l-1}_k}{\partial z^{l-1}_k} = \sum_j\delta^l_j\frac{\partial\left(\sum\limits_kW^l_{jk}a^{l-1}_k + b^l_j\right)}{\partial a^{l-1}_k}\frac{\partial a^{l-1}_k}{\partial z^{l-1}_k} = \sum_j\delta^l_jW^j_{jk}\nabla z^{l-1}_k = \sum_jW^j_{jk}\delta^l_j\nabla z^{l-1}_k$$
 
 写成矩阵的形式：
 
-$$\boldsymbol\delta^{l-1} = \begin{pmatrix}\delta^{l-1}_1\\\delta^{l-1}_2\\\vdots\\\delta^{l-1}_k\end{pmatrix} = \begin{pmatrix}\sum\limits_jW^j_{j1}\delta^l_j\\\sum\limits_jW^j_{j2}\delta^l_j\\\vdots\\\sum\limits_jW^j_{jk}\delta^l_j\end{pmatrix} = (\mathbf W^l)^T\boldsymbol\delta^l$$
+$$\boldsymbol\delta^{l-1} = \begin{pmatrix}\delta^{l-1}_1\\\delta^{l-1}_2\\\vdots\\\delta^{l-1}_k\end{pmatrix} = \begin{pmatrix}\sum\limits_jW^j_{j1}\delta^l_j\nabla z^{l-1}_1\\\sum\limits_jW^j_{j2}\delta^l_j\nabla z^{l-1}_2\\\vdots\\\sum\limits_jW^j_{jk}\delta^l_j\nabla z^{l-1}_k\end{pmatrix} = (\mathbf W^l)^T\boldsymbol\delta^l\odot\nabla\mathbf z^{l-1}$$
 
 总结一下，可得反向传播(Backpropagation)的更新流程：
 
 $$
 \begin{alignedat}{6}
 &\boldsymbol\delta^L &=&& (\nabla\mathbf a^L)^T\frac{\partial C}{\partial\mathbf a^L}&\quad&\quad
-&\boldsymbol\delta^{l-1} &=&& (\mathbf W^l)^T\boldsymbol\delta^l&\\
+&\boldsymbol\delta^{l-1} &=&& (\mathbf W^l)^T\boldsymbol\delta^l\odot\nabla\mathbf z^{l-1}&\\
 &\frac{\partial C}{\partial\mathbf W^l} &=&& \boldsymbol\delta^l(\mathbf a^{l-1})^T&\quad&\quad
 &\frac{\partial C}{\partial\mathbf b^l} &=&& \boldsymbol\delta^l&\\
 &\mathbf W^l &\gets&& \mathbf W^l - \eta\frac{\partial C}{\partial\mathbf W^l}&\quad&\quad
@@ -72,7 +70,7 @@ $$
 
 ### Sigmoid + MSE 有什么不好？
 
-犯错并不可怕，可怕的是不长教训一错再错。理想情况下，错误越大教训越大，也就是损失越大学习越快，**而 Sigmoid + MSE 却是损失越大学习越慢**，所以它们不是一组好的搭配。
+一个聪明的人，犯的错误越大，长的教训就越大；一个好的神经网络也要一样，损失越大学习越快。**而 Sigmoid + MSE 却是损失越大学习越慢**，所以它们不是一组好的组合。
 
 > 如果 Output function 为 $a_i^L = \frac{1}{1 + e^{-z_i^L}}$, Loss function 为 $C = \frac{(a_i^L - y_i^L)^2}{2}$, 则：
 >
