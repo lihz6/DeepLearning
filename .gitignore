@@ -1,2 +1,11 @@
-.ipynb_checkpoints/
-data/
+*
+!/exercises
+!/exercises/**
+/exercises/**/__pycache__
+
+!/README.d
+!/README.d/**
+
+!.gitignore
+!README.md
+!setup.cfg
