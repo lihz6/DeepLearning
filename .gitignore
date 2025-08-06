@@ -1,7 +1,8 @@
 *
-!/exercises
-!/exercises/**
-/exercises/**/__pycache__
+!/notebooks
+!/notebooks/**
+/notebooks/**/__pycache__
+/notebooks/**/.*
 
 !/README.d
 !/README.d/**
